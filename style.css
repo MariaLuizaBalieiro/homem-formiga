@@ -1,76 +1,70 @@
-
+/*reset*/
 *{
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 body{
-    overflow: hidden;
     height: 100vh;
     display: grid;
-    grid-template-rows: 100px 1fr 50px;
+    grid-template-rows: 50px 1fr 200px;
     padding: 70px 70px 24px 70px;
-    background-image: url(./img/background.png);
+    background-image: url(img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
 }
+
+.logo{
+    position: relative;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.logo__text{
+    font-size: 23px;
+    font-weight: 1000;
+    position: relative;
+    gap: 64px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    grid-template-areas:
+        "info socials"
+        "info socials";
+}
+
+.info-container{
+    grid-area: info;
+    display: grid;
+}
+
+.description__title{
+    font-size: 64px;
+}
+
 .description__text{
     font-size: 25px;
-    color:white;
-    width: 500px;
-}.description__logo{
-    margin-left: 50px;
+    width: 580px;
 }
-.video__1{
-    margin-right: 50px;
+
+.socials-container{
+    grid-area: socials;
+    display: grid;
+    place-content: center;
+    gap: 32px;
 }
-.video__2{
-    margin-right: 50px;
-}
-.redes__sociais{
-    margin-left: 85%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-}
-.facebook{
-    margin-left: 85%;
-    justify-content: right;
-}
-.youtube{
-    margin-left: 85%;
-    justify-content: right;
-}
-.twitter{
-    margin-left: 85%;
-    justify-content: right;
-}
-.instagram{
-    margin-left: 85%;
-    justify-content: right;
-}
-.videos{
-    margin-bottom: 50%;
-    display: flex;
-}
-.video__1{
-    margin-right: 50px;
-    width: 200px;
-}
-.video__2{
-    margin-right: 50px;
-    width: 200px;
-}
-.video__3{
-    margin-right: 500px;
-    width: 200px;
-}
+
 footer{
-    margin-left: 50px;
-    margin-top: 100px;
+}
+
+.video{
     display: flex;
-    justify-content: left;
-    align-items: end;
-    gap: 100px;
+    align-items: flex-end;
+    gap: 50px;
 }
